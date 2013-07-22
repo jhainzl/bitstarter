@@ -10,46 +10,68 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
     <style type="text/css">
     
-    /* Large desktop */
-    @media (min-width: 980px){
-      body{
-        padding-top: 60px;
+      /* Large desktop */
+      @media (min-width: 980px){
+        body{
+          padding-top: 60px;
+        }
+        .linediv-l{
+          border-right: 1px white solid;
+        }
+        .linediv-r{
+          border-left: 1px white solid;
+        }
       }
-    }
     
-    /*Landscape phones and down*/
-    @media (max-width: 480px) {
-      .copy {
-        padding: 2.5% 10%;
+      /*Landscape phones and down*/
+      @media (max-width: 480px) {
+        .copy {
+          padding: 2.5% 10%;
+        }
+        .linediv-l{
+          border-bottom: 1px white solid;
+        }
+        .linediv-r{
+          border-top: 1px white solid;
+        }
       }
-    }
 
-    /* All from factors */
-
-    body{
-      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    }
-    .heading, .subheading {
-      font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-      text-align: center;
-    }
-    p.lead {
-      padding-top: 1.5%;
-      font-size: 24px;
-      line-height: 30px;
-    }
-    p {
-      font-size: 18px;
-      line-height: 24px;
-    }
-
-      .navigation, .pitch, .section1, .section2, .faq, .footer {
-      padding: 10px 0px 10px 0px
+      /* All from factors */
+  
+      body{
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
       }
-      .video, .thermometer, .order, .social {
-      border: 1px dotted;
-      text-align: center;
+      .heading, .subheading {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        text-align: center;
       }
+      p.lead {
+        padding-top: 1.5%;
+        font-size: 24px;
+        line-height: 30px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 24px;
+      }
+      /* Video pitch and action */
+      .pitch{
+        padding: 2.5% 0%;
+      }
+      .order{
+        padding 2% 0%;
+      }
+      .actions{
+        background-color: #343434;
+        padding: 3% 0%;
+      }
+      .video, .thermometer, .order, .social, .statistics {
+        text-align: center;
+      }
+      .statistics h3, .statistics p {
+        color:white
+      }
+
       .video{
       height: 40px;
       line-height: 40px
@@ -93,42 +115,54 @@
 	  <p class="lead">This is my first bitstarter project.</p>
 	</div>
       </div>
-<div class="row pitch">
-  <div class="span6 video">
-    Video
-    </div>
-  <div class="span6">
-    <div class="thermometer">
-      Thermometer
+      <div class="row-fluid pitch">
+        <div class="span5 offset1 video">
+          <img class="img-polaroid" src="http://placehold.it/480x300">
+        </div>
+        <div class="span5 actions">
+	  <div class="span8 offset2">
+	    <div class="statistics">
+	      <div class="span4">
+		<div class="linediv-l">
+		  <h3>1.000</h3>
+		  <p>backers</p>
+		</div>
+		<div class="span4">
+		  <div class="linediv-c">
+		    <h3>EUR 6.000</h3>
+		    <p>of EUR 10.000</p>
+		  <div>
+		</div>
+		<div class="linediv-r">
+		  <h3>10</h3>
+		  <p>days left</p>
+		<div>
+	      </div>
+	    </div>
+	  </div>
+        </div>
+
+	<div class="row section1">
+	  <div class="span12">
+	    Marketing Section 1
+	  </div>
+	</div>
+	<div class="row section2">
+	  <div class="span12">
+	    Marketing Section 2
+	  </div>
+	</div>
+	<div class="row faq">
+	  <div class="span12">
+	    FAQ
+	  </div>
+	</div>
+	<div class="row footer">
+	  <div class="span12">
+	    Footer
+	  </div>
+        </div>
       </div>
-    <div class="order">
-      Order
-      </div>
-    <div class="social">
-      Social
-      </div>
     </div>
-  </div>
-<div class="row section1">
-  <div class="span12">
-    Marketing Section 1
-    </div>
-  </div>
-<div class="row section2">
-  <div class="span12">
-    Marketing Section 2
-    </div>
-  </div>
-<div class="row faq">
-  <div class="span12">
-    FAQ
-    </div>
-  </div>
-<div class="row footer">
-  <div class="span12">
-    Footer
-    </div>
-  </div>
-</div>
-</body>
+  </body>
 </html>
